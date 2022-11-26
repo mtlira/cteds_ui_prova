@@ -34,7 +34,6 @@ namespace LoginService
         private void Login(object sender, RoutedEventArgs e)
         {
             var typedEmail = (TextBox) this.FindName("Email");
-            Console.WriteLine(typedEmail);
             //context.Users.Where(u => u.Email == ).ToList();
         }
     }
