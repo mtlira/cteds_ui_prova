@@ -35,9 +35,9 @@ namespace LoginService
         private void Login(object sender, RoutedEventArgs e)
         {
             List<User> users = context.Users.Where(u => u.Email == Email.Text).ToList();
-            if (users.Count == 0) MessageBox.Show("Usuário não encontrado");
-            else if (users[0].Password == Password.Password) MessageBox.Show("Login realizado com sucesso!");
-            else MessageBox.Show("Dados incorretos. Tente novamente.");
+            if (users.Count == 0) MessageBox.Show("Credenciais inválidas!");
+            else if (users[0].Password == Password.Password) MessageBox.Show("Usuário autenticado!");
+            else MessageBox.Show("Credenciais inválidas!");
         }
     }
 }
