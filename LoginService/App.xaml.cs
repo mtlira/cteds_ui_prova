@@ -25,7 +25,7 @@ namespace LoginService
 
             services.AddDbContext<Context>(options =>
             {
-               options.UseSqlite("Data source = User.db");
+               options.UseSqlite("Data source = matheuslira-d7-avaliacao.db");
             });
 
             services.AddSingleton<MainWindow>();
