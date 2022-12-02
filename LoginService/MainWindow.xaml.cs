@@ -23,6 +23,7 @@ namespace LoginService
     /// </summary>
     public partial class MainWindow : Window
     {
+
         private readonly Context context;
 
         public MainWindow(Context context)
@@ -33,8 +34,7 @@ namespace LoginService
 
         private void Login(object sender, RoutedEventArgs e)
         {
-            var typedEmail = (TextBox) this.FindName("Email");
-            //context.Users.Where(u => u.Email == ).ToList();
+            MessageBox.Show(Email.Text + Password.Password);
         }
     }
 }

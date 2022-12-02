@@ -15,14 +15,8 @@
         <Label FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60 145 0 0" Grid.Row="0" Content="Usuário" />
         <Label FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60 325 0 0" Grid.Row="0" Content="Senha" />
         <TextBox FontSize="20" Grid.Row="0" Width="360" Height="60" Name="Email" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60 180" TextAlignment="Left" Padding="5 15" Background="LightGray"/>
-        <TextBox FontSize="20" Grid.Row="0" Width="360" Height="60" Name="Password" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,360,0,0" TextAlignment="Left" Padding="0 15" Background="LightGray"/>
+        <PasswordBox FontSize="20" Grid.Row="0" Width="360" Height="60" Name="Password" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,360,0,0" Padding="0 15" Background="LightGray"/>
         <Button Name="Button" Width="240" Height="60" Content="Acessar"  HorizontalAlignment="Center" VerticalAlignment="Top" Background="LightGray" Margin="0,540,0,0" Click="Login"/>
-
-        <Popup IsOpen="{Binding IsChecked, ElementName=Button}" x:Name="Popup" StaysOpen="True">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightYellow">
-                <CheckBox Content="This is a popup"/>
-            </Border>
-        </Popup>
     </Grid>
     
     
